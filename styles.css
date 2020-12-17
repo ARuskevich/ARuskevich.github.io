@@ -1,0 +1,89 @@
+body { animation: transitionIn 0.75s;
+       background-image: url("Alex1.jpg");
+       background-repeat: no-repeat;
+       background-attachment: fixed;
+       background-size: cover;
+       }
+
+body.aboutme{ animation: transitionIn 0.75s;
+       background-image: url("Alex2.jpg");
+       background-repeat: no-repeat;
+       background-attachment: fixed;
+       background-size: cover;
+            }
+
+body.resume{ animation: transitionIn 0.75s;
+       background-image: url("pic1.png");
+       background-repeat: no-repeat;
+       background-attachment: fixed;
+       background-size: cover;
+              }
+body.contact{ animation: transitionIn 0.75s;
+       background-image: url("Alex4.jpg");
+       background-repeat: no-repeat;
+       background-attachment: fixed;
+       background-size: cover;
+              }
+
+
+
+
+
+@keyframes transitionIn {
+  from {
+    opacity: 0;
+    transform: rotateX(-10deg);
+  }
+
+  to {
+    opacity: 1;
+    transform: rotateX(0);
+  }
+
+}
+h1.contact {
+  position:absolute;
+  left:300px;
+  top:150px;
+}
+h1 {
+  position:absolute;
+  left:200px;
+  bottom:150px;
+}
+h1.resume {
+  position:absolute;
+  left:400px;
+  bottom:170px;
+}
+h2 {
+  position:absolute;
+  left:10px;
+  bottom:10px;
+}
+h1.aboutme {
+  position:absolute;
+  left:10px;
+  top:50px;
+}
+.vertical-menu {
+  width: 80px; /* Set a width if you like */
+  position: absolute; top:200px; right: 0px;
+}
+
+.vertical-menu a {
+  background-color: #eee; /* Grey background color */
+  color: black; /* Black text color */
+  display: block; /* Make the links appear below each other */
+  padding: 12px; /* Add some padding */
+  text-decoration: none; /* Remove underline from links */
+}
+
+.vertical-menu a:hover {
+  background-color: grey; /* Dark grey background on mouse-over */
+}
+
+.vertical-menu a.active {
+  background-color: grey; /* Add a grey color to the "active/current" link */
+  color: white;
+}
